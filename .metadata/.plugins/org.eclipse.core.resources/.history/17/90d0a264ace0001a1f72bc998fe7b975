@@ -1,0 +1,7 @@
+package MyPackage;
+
+public class SomeClass {
+	public void printAMessage() {
+		System.out.println("A message.");
+	}
+}

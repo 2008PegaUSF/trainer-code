@@ -1,0 +1,10 @@
+package MyPackage;
+
+public interface MyInterface {
+	
+	public void interfaceMessage();
+	
+	public void interfaceMessage3();
+	
+	public void interfaceMessage2();
+}

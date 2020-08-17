@@ -1,0 +1,13 @@
+package MyPackage;
+
+public class SomeClass {
+	public void printAMessage() {
+		System.out.println("A message.");
+	}
+	
+	public void printMyStrings(String[] strings) {
+		for (String s : strings) {
+			System.out.println(s);
+		}
+	}
+}

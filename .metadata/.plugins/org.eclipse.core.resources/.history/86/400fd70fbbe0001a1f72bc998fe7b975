@@ -1,0 +1,7 @@
+package MyPackage;
+
+public interface MyInterface {
+	String s;
+	
+	public void interfaceMessage();
+}

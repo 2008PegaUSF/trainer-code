@@ -1,0 +1,13 @@
+import MyPackage.*;
+
+public class App {
+	public static void main(String[] args) {
+		SomeClass sc = new SomeClass();
+		
+		String[] s = {"Here", "I", "Go"};
+		sc.printMyStrings("Here", "I", "Go");
+		sc.setCName("something");
+	}
+}
+
+

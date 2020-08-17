@@ -1,0 +1,20 @@
+import MyPackage.*;
+
+public class App {
+	public static void main(String[] args) {
+		SomeClass sc = new SomeClass();
+		sc.printAMessage();
+		
+		
+		
+		String[] s = {"Here", "I", "Go"};
+		// sc.printMyStrings("Here", "I", "Go");
+		//sc.setCName("something");
+	}
+	
+	public static void printObjectMessage(MyParent mp) {
+		mp.printAMessage();
+	}
+}
+
+

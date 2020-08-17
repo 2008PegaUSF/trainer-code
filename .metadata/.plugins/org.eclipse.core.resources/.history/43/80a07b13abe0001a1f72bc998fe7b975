@@ -1,0 +1,14 @@
+import MyPackage.*;
+
+import static java.lang.System.out;
+
+public class App {
+	public static void main(String[] args) {
+		SomeClass sc = new SomeClass();
+		
+		out.println("Hello world!");
+		sc.printAMessage();
+	}
+}
+
+

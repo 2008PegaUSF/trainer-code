@@ -1,0 +1,9 @@
+package MyPackage;
+
+public class MyParent {
+	
+	public void printAMessage() {
+		System.out.println("A parent message.");
+	}
+
+}

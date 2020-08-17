@@ -1,0 +1,12 @@
+import OtherPackage.*;
+
+public class App {
+	public static void main(String[] args) {
+		MyPackage.SomeClass sc = new MyPackage.SomeClass();
+		
+		System.out.println("Hello world!");
+		sc.printAMessage();
+	}
+}
+
+

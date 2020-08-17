@@ -1,0 +1,11 @@
+import MyPackage.*;
+
+public class App {
+	public static void main(String[] args) {
+		MyPackage.SomeClass sc = new MyPackage.SomeClass();
+		
+		sc.printMyStrings("Hello");
+	}
+}
+
+

@@ -1,0 +1,12 @@
+import OtherPackage.*;
+
+public class App {
+	public static void main(String[] args) {
+		SomeClass sc = new SomeClass();
+		
+		System.out.println("Hello world!");
+		sc.printAMessage();
+	}
+}
+
+
