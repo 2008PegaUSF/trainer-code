@@ -12,13 +12,6 @@ public class App {
 		al.add("Second string");
 		al.add("Third string");
 		
-		Object o = new Object();
-		Stack<String> stack = new Stack<String>();
-		
-		MyGeneric<Stack<String>> myGenericStack = new MyGeneric<Stack<String>>();
-		myGenericStack.myT = stack;
-		myGenericStack.printMyT();
-		
 		// Basic for loop
 		for (int i = 0; i < al.size(); ++i) {
 			System.out.println(al.get(i));
@@ -34,5 +27,14 @@ public class App {
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
+		
+		// Using generics
+		Object o = new Object();
+		Stack<String> stack = new Stack<String>();
+		
+		MyGeneric<Object> genericObject = new MyGeneric<Object>(o);
+		MyGeneric<Stack<String>> myGenericStack = new MyGeneric<Stack<String>>();
+		myGenericStack.myT = stack;
+		myGenericStack.printMyT();
 	}
 }
