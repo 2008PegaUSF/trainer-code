@@ -9,18 +9,20 @@ public class App {
 		// so no try/catch needed
 		Object o = new Object();
 		o = null;
-		Problem.uncheckedIterate(o);
+		// Problem.uncheckedIterate(o);
 		
 		try {
 			Problem.iterate();
+			// int f = Problem.divideBad(5, 0);
 			
-			/* Object o = new Object();
-			o = null;
-			Problem.uncheckedIterate(o);*/
+		} catch (ArithmeticException ae) {
+			System.out.println("Cant divide by 0 yo: " + ae.getMessage());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
-		} finally {
+		} 
+		// Finally is optional!
+		finally {
 			System.out.println("Goodbye.");
 		}
 	}

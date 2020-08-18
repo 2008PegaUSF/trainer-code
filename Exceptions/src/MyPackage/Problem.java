@@ -17,4 +17,18 @@ public class Problem {
 			System.out.println(o.toString());
 		}
 	}
+	
+	public static int divideBad(int n, int m) {
+		return n / m;
+	}
+	
+	public static int divideGood(int n, int m) {
+		try {
+			return n / m;
+		}
+		catch (ArithmeticException e) {
+			// Error handling
+			return 0;
+		}
+	}
 }
