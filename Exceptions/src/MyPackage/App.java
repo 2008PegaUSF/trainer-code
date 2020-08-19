@@ -1,5 +1,7 @@
 package MyPackage;
 
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class App {
@@ -10,13 +12,13 @@ public class App {
 		Object o = new Object();
 		o = null;
 		// Throws a NullPointerExeption
-		Problem.uncheckedIterate(o);
+		// Problem.uncheckedIterate(o);
 		
 		// Try is not optional if you need to handle
 		// a checked exception
 		try {
 			// Throws an Exception
-			Problem.iterate();
+			// Problem.iterate();
 			
 			// Throws an ArithmeticException
 			// int f = Problem.divideBad(5, 0);
