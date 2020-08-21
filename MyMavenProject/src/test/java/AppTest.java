@@ -6,6 +6,8 @@ import MyPackage.PrimeChecker;
 
 public class AppTest {
 	
+	PrimeChecker pc;
+	
 	int myNumber() {
 		return 5;
 	}

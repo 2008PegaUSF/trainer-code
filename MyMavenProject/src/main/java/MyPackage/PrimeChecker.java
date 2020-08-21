@@ -1,6 +1,10 @@
 package MyPackage;
 
+import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.core.config.Configurator;
+
 public class PrimeChecker {
+	
 	public static boolean isPrime(int num) {
 		if (num <= 1) return false;
 		
@@ -10,5 +14,12 @@ public class PrimeChecker {
 		}
 		
 		return true;
+	}
+	
+	public static void main(String[] args) {
+		Configurator.initialize(null, "log4j2.xml");
+		Logger log = LogManager.getLogger(PrimeChecker.class);
+		
+		log.error("Error!");
 	}
 }
